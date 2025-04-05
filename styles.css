@@ -1,0 +1,166 @@
+/* styles.css */
+/* Autor: Estudiante de 3er año de informática */
+/* Proyecto: Página Web de Thierry Henry */
+
+:root {
+    --color-principal: #2c3e50;
+    --color-secundario: #f8f9fa;
+    --color-acento: #ffc107;
+    --color-fondo: #f5f5f5;
+    --borde-redondo: 12px;
+  }
+  
+  /* --- Estilos globales --- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: #333;
+  }
+  
+  /* --- Encabezados --- */
+  h1, h2, h3 {
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* --- Navbar --- */
+  .navbar {
+    background-color: var(--color-principal);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: var(--color-acento) !important;
+  }
+  
+  /* --- Carrusel --- */
+  .carousel-item img {
+    .img-500 {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  /* --- Secciones principales --- */
+  section {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: var(--borde-redondo);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    border-left: 5px solid var(--color-principal);
+    padding-left: 12px;
+  }
+  
+  /* --- Tabla de logros --- */
+  table {
+    margin-top: 20px;
+  }
+  
+  .table thead {
+    background-color: var(--color-principal);
+    color: #fff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* --- Formulario de contacto --- */
+  form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+    box-shadow: 0 0 5px rgba(44, 62, 80, 0.4);
+  }
+  
+  form button {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #1a242f;
+  }
+  
+  /* --- Footer --- */
+  footer {
+    background-color: #212529;
+    color: #ccc;
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: var(--color-secundario);
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--color-acento);
+  }
+  
+  /* --- Videos (iframe) --- */
+  .ratio iframe {
+    border-radius: var(--borde-redondo);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px;
+    }
+  
+    section {
+      padding: 25px 15px;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  }
